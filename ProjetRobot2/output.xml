@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190522 10:40:11.814" generator="Robot 3.1.1 (Python 2.7.12 on win32)">
+<suite source="C:\Users\DELL\eclipse-workspace\ProjetRobot2\SuiteTest2.robot" id="s1" name="SuiteTest2">
+<test id="s1-t1" name="SampleLoginTest2">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190522 10:40:12.579" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com'.</msg>
+<status status="PASS" endtime="20190522 10:40:47.381" starttime="20190522 10:40:12.578"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" endtime="20190522 10:40:47.387" starttime="20190522 10:40:47.382"></status>
+</kw>
+<kw name="LOGINKW1">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>Admin</arg>
+</arguments>
+<msg timestamp="20190522 10:40:47.389" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" endtime="20190522 10:40:47.641" starttime="20190522 10:40:47.388"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>admin123</arg>
+</arguments>
+<msg timestamp="20190522 10:40:47.641" level="INFO">Typing password into text field 'id=txtPassword'.</msg>
+<status status="PASS" endtime="20190522 10:40:47.830" starttime="20190522 10:40:47.641"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20190522 10:40:47.830" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" endtime="20190522 10:40:55.621" starttime="20190522 10:40:47.830"></status>
+</kw>
+<status status="PASS" endtime="20190522 10:40:55.622" starttime="20190522 10:40:47.388"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20190522 10:40:57.626" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190522 10:40:57.626" starttime="20190522 10:40:55.625"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=welcome</arg>
+</arguments>
+<msg timestamp="20190522 10:40:57.627" level="INFO">Clicking element 'id=welcome'.</msg>
+<status status="PASS" endtime="20190522 10:40:57.757" starttime="20190522 10:40:57.626"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Logout</arg>
+</arguments>
+<msg timestamp="20190522 10:40:57.759" level="INFO">Clicking link 'Logout'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190522 10:41:03.306" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190522 10:41:03.306" starttime="20190522 10:41:02.823"></status>
+</kw>
+<msg timestamp="20190522 10:41:03.309" level="FAIL">Link with locator 'Logout' not found.</msg>
+<status status="FAIL" endtime="20190522 10:41:03.309" starttime="20190522 10:40:57.758"></status>
+</kw>
+<doc>un test de login tres simple</doc>
+<status status="FAIL" endtime="20190522 10:41:03.310" critical="yes" starttime="20190522 10:40:12.576">Link with locator 'Logout' not found.</status>
+</test>
+<status status="FAIL" endtime="20190522 10:41:03.314" starttime="20190522 10:40:11.818"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="SuiteTest2" pass="0">SuiteTest2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
