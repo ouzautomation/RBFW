@@ -14,6 +14,7 @@ SampleLoginTest2
   Log To Console  ce test est effectue par %{username} sur %{os}
   Close Browser
    
+
     
 *** Variables ***
 ${URL}    https://opensource-demo.orangehrmlive.com
